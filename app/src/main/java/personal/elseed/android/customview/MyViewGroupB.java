@@ -23,19 +23,19 @@ public class MyViewGroupB extends LinearLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.d("xys", "ViewGroupB dispatchTouchEvent" + ev.getAction());
+        Log.d("seed", "ViewGroupB dispatchTouchEvent" + ev.getAction());
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        Log.d("xys", "ViewGroupB onInterceptTouchEvent" + ev.getAction());
+        Log.d("seed", "ViewGroupB onInterceptTouchEvent" + ev.getAction());
         return super.onInterceptTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.d("xys", "ViewGroupB onTouchEvent" + event.getAction());
+        Log.d("seed", "ViewGroupB onTouchEvent" + event.getAction());
         return super.onTouchEvent(event);
     }
 }
