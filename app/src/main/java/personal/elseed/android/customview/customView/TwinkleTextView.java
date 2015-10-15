@@ -12,6 +12,10 @@ import android.widget.TextView;
  */
 public class TwinkleTextView extends TextView {
 
+    /**
+     * 自定义View方式1：对现有的控件进行拓展
+     */
+
     private Paint mPaint1;
     private Paint mPaint2;
 
