@@ -1,4 +1,4 @@
-package personal.elseed.android.customview;
+package personal.elseed.android.customview.dispatchEvent;
 
 import android.content.Context;
 import android.util.AttributeSet;

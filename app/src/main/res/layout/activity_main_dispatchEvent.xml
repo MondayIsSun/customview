@@ -8,22 +8,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <personal.elseed.android.customview.MyViewGroupA
+    <personal.elseed.android.customview.dispatchEvent.MyViewGroupA
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/holo_blue_bright">
 
-        <personal.elseed.android.customview.MyViewGroupB
+        <personal.elseed.android.customview.dispatchEvent.MyViewGroupB
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:background="@android:color/holo_green_dark">
 
-            <personal.elseed.android.customview.MyView
+            <personal.elseed.android.customview.dispatchEvent.MyView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="@android:color/darker_gray" />
 
-        </personal.elseed.android.customview.MyViewGroupB>
+        </personal.elseed.android.customview.dispatchEvent.MyViewGroupB>
 
-    </personal.elseed.android.customview.MyViewGroupA>
+    </personal.elseed.android.customview.dispatchEvent.MyViewGroupA>
 </RelativeLayout>
