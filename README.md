@@ -28,9 +28,9 @@
 
 #### 三种测量模式
 
-- MeasureSpec.EXACTLY ==> layout\_width / layout\_height = 具体值 或 " match\_parent "
-- MeasureSpec.AT\_MOST ==> layout\_width / layout\_height = " wrap\_content "
-- MeasureSpec.UNSPECIFIED ==> 不指定测量模式，View想多大就多大，自定义View时候会用到
+- MeasureSpec.**EXACTLY** ==> layout\_width / layout\_height = 具体值 或 " match\_parent "
+- MeasureSpec.**AT\_MOST** ==> layout\_width / layout\_height = " wrap\_content "
+- MeasureSpec.**UNSPECIFIED** ==> 不指定测量模式，View想多大就多大，自定义View时候会用到
 
 #### MeasureSpec
 
