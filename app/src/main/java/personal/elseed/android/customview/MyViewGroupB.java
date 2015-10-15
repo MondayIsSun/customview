@@ -16,8 +16,7 @@ public class MyViewGroupB extends LinearLayout {
         super(context, attrs);
     }
 
-    public MyViewGroupB(Context context, AttributeSet attrs,
-                        int defStyleAttr) {
+    public MyViewGroupB(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
