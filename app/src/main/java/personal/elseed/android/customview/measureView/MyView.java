@@ -34,9 +34,6 @@ public class MyView extends View {
         int specSize = MeasureSpec.getSize(measureSpec);
 
         //根据测量模式来设置返回到测量值
-        //MeasureSpec.AT_MOST
-        //MeasureSpec.EXACTLY
-        //MeasureSpec.UNSPECIFIED
         if (specMode == MeasureSpec.EXACTLY) {
             result = specSize;
         } else {
