@@ -45,7 +45,6 @@ public class MyView extends View {
                 result = Math.min(specSize, result);
             }
         }
-
         return result;
     }
 }

@@ -21,7 +21,7 @@
 ### View的测量与绘制
 
 ### ViewGroup的测量与绘制
-ViewGroup通常情况下不会不需要绘制，因为其本身一般没有需要绘制的东西——>ViewGroup是一种容器View，
+ViewGroup通常情况下不需要绘制，因为其本身一般没有需要绘制的东西 ——> ViewGroup是一种容器View，
 如果没有指定ViewGroup的背景颜色，ViewGroup的onDraw()方法都不会被调用，
 但是，ViewGroup会使用 **dispatchDraw()** 方法来绘制其包含的子View，其过程同样是通过遍历所有的子View，并调用子View的绘制方法来完成绘制
 
