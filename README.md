@@ -75,8 +75,13 @@
 ## 三、自定义View的三种方式
 
 - 对现有的控件进行扩展
-- 创建复合控件
+- 创建复合控件——>这种方式通常需要继承一个合适的ViewGroup
 - 重写View实现全新的控件
+
+### 自定View需要掌握的知识点
+- Canvas API
+- Paint API
+- Android自定义属性，TypeArray的用法
 
 ## 四、Android事件拦截/传递机制
 

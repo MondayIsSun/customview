@@ -1,4 +1,4 @@
-package personal.elseed.android.customview.customView;
+package personal.elseed.android.customview.customView.a;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -51,16 +51,16 @@ public class TwinkleTextView extends TextView {
     @Override
     protected void onDraw(Canvas canvas) {
 
-        //在调用父方法之前 do something
+        //在调用父方法之前实现自己的逻辑，对TextView来说是显示文本内容之前
         canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint1);
         canvas.drawRect(10, 10, getMeasuredWidth() - 10, getMeasuredHeight() - 10, mPaint2);
         canvas.save();
         canvas.translate(10, 0);
 
-        //调用父方法
+        //调用父方法实现原生控件的绘制
         super.onDraw(canvas);
 
-        //在调用父方法之后 do something
+        //在调用父方法之后实现自己的逻辑，对TextView来说是显示文本内容后
         canvas.restore();
     }
 }
