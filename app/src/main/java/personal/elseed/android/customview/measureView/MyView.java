@@ -2,6 +2,7 @@ package personal.elseed.android.customview.measureView;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -23,24 +24,29 @@ public class MyView extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(measureSize(widthMeasureSpec), measureSize(heightMeasureSpec));
+        setMeasuredDimension(measureSize(200, widthMeasureSpec), measureSize(200, heightMeasureSpec));
     }
 
-    private int measureSize(int measureSpec) {
-        int result;
+    private int measureSize(int size, int measureSpec) {
+        int result = size;
 
         //获取测量模式和具体值
         int specMode = MeasureSpec.getMode(measureSpec);
         int specSize = MeasureSpec.getSize(measureSpec);
 
+        Log.d("ELSeed", "" + specSize);
+
         //根据测量模式来设置返回到测量值
-        if (specMode == MeasureSpec.EXACTLY) {
-            result = specSize;
-        } else {
-            result = 200;
-            if (specMode == MeasureSpec.AT_MOST) {
-                result = Math.min(specSize, result);
-            }
+        switch (specMode) {
+            case MeasureSpec.EXACTLY:
+                result = specSize;
+                break;
+            case MeasureSpec.UNSPECIFIED:
+                result = size;
+                break;
+            case MeasureSpec.AT_MOST:
+                result = Math.min(specSize, size);
+                break;
         }
         return result;
     }

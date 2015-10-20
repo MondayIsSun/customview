@@ -5,15 +5,15 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <personal.elseed.android.customview.measureView.MyView
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:background="@android:color/darker_gray" />
+    <!--    <personal.elseed.android.customview.measureView.MyView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@android:color/darker_gray" />-->
 
-    <!--<personal.elseed.android.customview.measureView.MyView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:background="@android:color/black" />-->
+    <!--    <personal.elseed.android.customview.measureView.MyView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark" />-->
 
     <personal.elseed.android.customview.measureView.MyView
         android:layout_width="wrap_content"
