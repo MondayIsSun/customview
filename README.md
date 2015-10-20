@@ -74,11 +74,22 @@
 
 ## 三、自定义View的三种方式
 
-- 对现有的控件进行扩展
-- 创建复合控件——>这种方式通常需要继承一个合适的ViewGroup
-- 重写View实现全新的控件
+### 1、对现有的控件进行扩展
 
-### 自定View需要掌握的知识点
+### 2、创建复合控件——>这种方式通常需要继承一个合适的ViewGroup
+>MyTopBar extends RelativeLayout（ViewGroup）,
+>
+>Android自定义属性，灵活控制控件的呈现,
+>
+>TypeArray,自定义属性与代码的绑定，
+>
+>接口回调机制，灵活控制控件的用户响应，
+>
+>在Layout布局文件里面使用自定义组件
+
+### 3、重写View实现全新的控件
+
+### 4、自定View需要掌握的知识点
 - Canvas API
 - Paint API
 - Android自定义属性，TypeArray的用法

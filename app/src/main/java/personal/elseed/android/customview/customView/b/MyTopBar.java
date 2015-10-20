@@ -39,7 +39,7 @@ public class MyTopBar extends RelativeLayout {
     private Drawable mLeftBackground;
     private String mLeftText;
 
-    // 右按钮的属性值，即我们在atts.xml文件中定义的属性
+    // 右按钮的属性值，即我们在attrs.xml文件中定义的属性
     private int mRightTextColor;
     private Drawable mRightBackground;
     private String mRightText;
