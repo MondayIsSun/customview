@@ -71,4 +71,10 @@
         android:onClick="btnDispatchMyButton"
         android:text="DispatchMyButton" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnDispatchMyLinearLayout"
+        android:text="DispatchMyLinearLayout" />
+
 </LinearLayout>

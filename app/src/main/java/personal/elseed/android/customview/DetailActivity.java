@@ -94,6 +94,9 @@ public class DetailActivity extends Activity {
                     }
                 });
                 break;
+            case 9:
+                setContentView(R.layout.dispatch_mylinearlayout);
+                break;
         }
     }
 }

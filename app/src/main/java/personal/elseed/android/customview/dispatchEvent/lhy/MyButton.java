@@ -60,12 +60,15 @@ public class MyButton extends Button {
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 Log.e("MyButton", "onTouchEvent ACTION_DOWN");
+                Log.e("ButtonMyLinearLayout", "onTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
                 Log.e("MyButton", "onTouchEvent ACTION_MOVE");
+                Log.e("ButtonMyLinearLayout", "onTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
                 Log.e("MyButton", "onTouchEvent ACTION_UP");
+                Log.e("ButtonMyLinearLayout", "onTouchEvent ACTION_UP");
                 break;
             default:
                 break;
@@ -80,14 +83,16 @@ public class MyButton extends Button {
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 Log.e("MyButton", "dispatchTouchEvent ACTION_DOWN");
+                Log.e("ButtonMyLinearLayout", "dispatchTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
                 Log.e("MyButton", "dispatchTouchEvent ACTION_MOVE");
+                Log.e("ButtonMyLinearLayout", "dispatchTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
                 Log.e("MyButton", "dispatchTouchEvent ACTION_UP");
+                Log.e("ButtonMyLinearLayout", "dispatchTouchEvent ACTION_UP");
                 break;
-
             default:
                 break;
         }

@@ -80,4 +80,9 @@ public class OutlookActivity extends Activity {
         mIntent.putExtra("flag", 8);
         startActivity(mIntent);
     }
+
+    public void btnDispatchMyLinearLayout(View view) {
+        mIntent.putExtra("flag", 9);
+        startActivity(mIntent);
+    }
 }
