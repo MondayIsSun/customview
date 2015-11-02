@@ -2,12 +2,16 @@ package personal.elseed.android.customview;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Toast;
 
 import personal.elseed.android.customview.customView.extendsView.CircleProgressView;
 import personal.elseed.android.customview.customView.extendsViewGroup.MyTopBarView;
+import personal.elseed.android.customview.dispatchEvent.lhy.MyButton;
 
-public class JumpActivity extends Activity {
+public class DetailActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,12 +52,12 @@ public class JumpActivity extends Activity {
 
                             @Override
                             public void rightClick() {
-                                Toast.makeText(JumpActivity.this, "right", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DetailActivity.this, "right", Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void leftClick() {
-                                Toast.makeText(JumpActivity.this, "left", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(DetailActivity.this, "left", Toast.LENGTH_SHORT).show();
                             }
                         });
 
@@ -64,6 +68,31 @@ public class JumpActivity extends Activity {
                 break;
             case 7:
                 setContentView(R.layout.dispatchevent);
+                break;
+            case 8:
+                setContentView(R.layout.dispatch_mybutton);
+                MyButton mButton = (MyButton) findViewById(R.id.id_btn);
+                mButton.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        int action = event.getAction();
+
+                        switch (action) {
+                            case MotionEvent.ACTION_DOWN:
+                                Log.e("MyButton", "onTouch ACTION_DOWN");
+                                break;
+                            case MotionEvent.ACTION_MOVE:
+                                Log.e("MyButton", "onTouch ACTION_MOVE");
+                                break;
+                            case MotionEvent.ACTION_UP:
+                                Log.e("MyButton", "onTouch ACTION_UP");
+                                break;
+                            default:
+                                break;
+                        }
+                        return false;
+                    }
+                });
                 break;
         }
     }

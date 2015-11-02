@@ -96,6 +96,8 @@
 
 ## 四、Android事件拦截/传递机制
 
+>[Android MotionEvent](http://blog.csdn.net/bigconvience/article/details/26611003)
+
 >[Android View事件分发机制](http://blog.csdn.net/lmj623565791/article/details/38960443)
 
 >[Android ViewGroup事件分发机制](http://blog.csdn.net/lmj623565791/article/details/39102591)

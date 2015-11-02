@@ -13,7 +13,7 @@ public class OutlookActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mIntent = new Intent(this, JumpActivity.class);
+        mIntent = new Intent(this, DetailActivity.class);
     }
 
     /**
@@ -76,4 +76,8 @@ public class OutlookActivity extends Activity {
         startActivity(mIntent);
     }
 
+    public void btnDispatchMyButton(View view) {
+        mIntent.putExtra("flag", 8);
+        startActivity(mIntent);
+    }
 }
