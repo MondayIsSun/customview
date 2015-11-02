@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.imooc.systemwidget.ShineTextView
+    <personal.elseed.android.customview.customView.extendsTexView.ShineTextView
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="My Android TextView"

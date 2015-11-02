@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.imooc.systemwidget.MyScrollView
+    <personal.elseed.android.customview.customView.extendsViewGroup.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -32,5 +32,5 @@
             android:scaleType="fitXY"
             android:src="@drawable/test4" />
 
-    </com.imooc.systemwidget.MyScrollView>
+    </personal.elseed.android.customview.customView.extendsViewGroup.MyScrollView>
 </LinearLayout>

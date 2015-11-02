@@ -6,17 +6,17 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class MyView extends View {
+public class DispatchView extends View {
 
-    public MyView(Context context) {
+    public DispatchView(Context context) {
         super(context);
     }
 
-    public MyView(Context context, AttributeSet attrs) {
+    public DispatchView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MyView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public DispatchView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

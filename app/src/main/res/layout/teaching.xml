@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.imooc.systemwidget.TeachingView
+    <personal.elseed.android.customview.measureView.TeachingView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>

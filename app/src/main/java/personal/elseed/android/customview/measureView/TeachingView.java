@@ -1,4 +1,4 @@
-package personal.elseed.android.customview.customView.c;
+package personal.elseed.android.customview.measureView;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -17,14 +17,12 @@ public class TeachingView extends View {
         super(context, attrs);
     }
 
-    public TeachingView(Context context, AttributeSet attrs,
-                        int defStyleAttr) {
+    public TeachingView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @Override
-    protected void onMeasure(int widthMeasureSpec,
-                             int heightMeasureSpec) {
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         setMeasuredDimension(
                 measureWidth(widthMeasureSpec),
                 measureHeight(heightMeasureSpec));

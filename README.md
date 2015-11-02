@@ -96,9 +96,9 @@
 
 ## 四、Android事件拦截/传递机制
 
->[Android ViewGroup事件分发机制](http://blog.csdn.net/lmj623565791/article/details/39102591)
+>[Android View事件分发机制](http://blog.csdn.net/lmj623565791/article/details/38960443)
 
->[Android View 事件分发机制源码解析](http://blog.csdn.net/lmj623565791/article/details/38960443)
+>[Android ViewGroup事件分发机制](http://blog.csdn.net/lmj623565791/article/details/39102591)
 
 ## 五、Android UI性能优化
 

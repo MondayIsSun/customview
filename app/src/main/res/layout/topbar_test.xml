@@ -8,7 +8,7 @@
 
     <!-- <include layout="@layout/topbar" /> -->
 
-    <personal.elseed.android.customview.customView.b.MyTopBar
+    <personal.elseed.android.customview.customView.extendsViewGroup.MyTopBarView
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="40dp"

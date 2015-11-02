@@ -1,4 +1,4 @@
-package personal.elseed.android.customview.customView.c;
+package personal.elseed.android.customview.customView.extendsViewGroup;
 
 import android.content.Context;
 import android.util.AttributeSet;

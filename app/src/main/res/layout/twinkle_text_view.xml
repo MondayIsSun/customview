@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <personal.elseed.android.customview.customView.a.TwinkleTextView
+    <personal.elseed.android.customview.customView.extendsTexView.TwinkleTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CustomView TwinkleTextView" />

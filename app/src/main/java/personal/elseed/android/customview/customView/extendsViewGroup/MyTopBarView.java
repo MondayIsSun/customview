@@ -1,4 +1,4 @@
-package personal.elseed.android.customview.customView.b;
+package personal.elseed.android.customview.customView.extendsViewGroup;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,7 @@ import personal.elseed.android.customview.R;
 /**
  * Created by Administrator on 2015/10/15.
  */
-public class MyTopBar extends RelativeLayout {
+public class MyTopBarView extends RelativeLayout {
 
     /**
      * 自定义View方式2：创建复合控件
@@ -44,35 +44,35 @@ public class MyTopBar extends RelativeLayout {
     private Drawable mRightBackground;
     private String mRightText;
 
-    public MyTopBar(Context context) {
+    public MyTopBarView(Context context) {
         super(context);
     }
 
-    public MyTopBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MyTopBarView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-    public MyTopBar(Context context, AttributeSet attrs) {
+    public MyTopBarView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         //设置MyTopBar的默认背景
         setBackgroundColor(0xFFF59563);
 
         //通过这个方法，将你在attrs.xml中定义的declare-styleable的所有属性的值存储到TypedArray中
-        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.MyTopBar);
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.MyTopBarView);
 
         //从TypedArray中取出对应的值来为要设置的属性赋值
-        mTitleTextSize = ta.getDimension(R.styleable.MyTopBar_titleTextSize, 10);
-        mTitleTextColor = ta.getColor(R.styleable.MyTopBar_titleTextColor, 0);
-        mTitleText = ta.getString(R.styleable.MyTopBar_titleText);
+        mTitleTextSize = ta.getDimension(R.styleable.MyTopBarView_titleTextSize, 10);
+        mTitleTextColor = ta.getColor(R.styleable.MyTopBarView_titleTextColor, 0);
+        mTitleText = ta.getString(R.styleable.MyTopBarView_titleText);
 
-        mLeftTextColor = ta.getColor(R.styleable.MyTopBar_leftTextColor, 0);
-        mLeftBackground = ta.getDrawable(R.styleable.MyTopBar_leftBackground);
-        mLeftText = ta.getString(R.styleable.MyTopBar_leftText);
+        mLeftTextColor = ta.getColor(R.styleable.MyTopBarView_leftTextColor, 0);
+        mLeftBackground = ta.getDrawable(R.styleable.MyTopBarView_leftBackground);
+        mLeftText = ta.getString(R.styleable.MyTopBarView_leftText);
 
-        mRightTextColor = ta.getColor(R.styleable.MyTopBar_rightTextColor, 0);
-        mRightBackground = ta.getDrawable(R.styleable.MyTopBar_rightBackground);
-        mRightText = ta.getString(R.styleable.MyTopBar_rightText);
+        mRightTextColor = ta.getColor(R.styleable.MyTopBarView_rightTextColor, 0);
+        mRightBackground = ta.getDrawable(R.styleable.MyTopBarView_rightBackground);
+        mRightText = ta.getString(R.styleable.MyTopBarView_rightText);
 
         //获取完TypedArray的值后，一般要调用recycle方法来避免重新创建的时候的错误
         ta.recycle();

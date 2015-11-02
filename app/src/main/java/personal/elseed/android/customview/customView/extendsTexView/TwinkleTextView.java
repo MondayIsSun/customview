@@ -1,4 +1,4 @@
-package personal.elseed.android.customview.customView.a;
+package personal.elseed.android.customview.customView.extendsTexView;
 
 import android.content.Context;
 import android.graphics.Canvas;

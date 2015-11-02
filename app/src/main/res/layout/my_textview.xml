@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.imooc.systemwidget.MyTextView
+    <personal.elseed.android.customview.customView.extendsTexView.MyTextView
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:gravity="center"

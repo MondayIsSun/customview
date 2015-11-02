@@ -8,17 +8,17 @@ import android.view.View;
 /**
  * Created by Administrator on 2015/10/15.
  */
-public class MyView extends View {
+public class MeasureView extends View {
 
-    public MyView(Context context) {
+    public MeasureView(Context context) {
         super(context);
     }
 
-    public MyView(Context context, AttributeSet attrs) {
+    public MeasureView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MyView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MeasureView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
