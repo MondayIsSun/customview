@@ -35,10 +35,11 @@ public class MyButton extends Button {
      * 一个dispatchTouchEvent，
      * 一个setOnTouchListener
      */
+
     /**
      * 不管是DOWN，MOVE，UP都会按照下面的顺序执行：
      * 1、dispatchTouchEvent
-     * 2、 setOnTouchListener的onTouch
+     * 2、setOnTouchListener的onTouch
      * 3、onTouchEvent
      */
 
