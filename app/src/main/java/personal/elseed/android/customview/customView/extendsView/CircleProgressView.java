@@ -10,7 +10,7 @@ import android.view.View;
 
 public class CircleProgressView extends View {
 
-    private int mMeasureHeigth;
+    private int mMeasureHeight;
     private int mMeasureWidth;
 
     private Paint mCirclePaint;
@@ -26,8 +26,7 @@ public class CircleProgressView extends View {
     private String mShowText;
     private float mShowTextSize;
 
-    public CircleProgressView(Context context, AttributeSet attrs,
-                              int defStyleAttr) {
+    public CircleProgressView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -42,8 +41,8 @@ public class CircleProgressView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         mMeasureWidth = MeasureSpec.getSize(widthMeasureSpec);
-        mMeasureHeigth = MeasureSpec.getSize(heightMeasureSpec);
-        setMeasuredDimension(mMeasureWidth, mMeasureHeigth);
+        mMeasureHeight = MeasureSpec.getSize(heightMeasureSpec);
+        setMeasuredDimension(mMeasureWidth, mMeasureHeight);
         initView();
     }
 
@@ -60,18 +59,17 @@ public class CircleProgressView extends View {
 
     private void initView() {
         float length;
-        if (mMeasureHeigth >= mMeasureWidth) {
+        if (mMeasureHeight >= mMeasureWidth) {
             length = mMeasureWidth;
         } else {
-            length = mMeasureHeigth;
+            length = mMeasureHeight;
         }
 
         mCircleXY = length / 2;
         mRadius = (float) (length * 0.5 / 2);
         mCirclePaint = new Paint();
         mCirclePaint.setAntiAlias(true);
-        mCirclePaint.setColor(getResources().getColor(
-                android.R.color.holo_blue_bright));
+        mCirclePaint.setColor(getResources().getColor(android.R.color.holo_blue_bright));
 
         mArcRectF = new RectF(
                 (float) (length * 0.1),
