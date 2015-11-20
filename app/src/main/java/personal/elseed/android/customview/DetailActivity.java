@@ -32,10 +32,10 @@ public class DetailActivity extends Activity {
                 break;
             case 3:
                 setContentView(R.layout.circle_progress);
-                //CircleProgressView circle = (CircleProgressView) findViewById(R.id.circle);
-                //circle.setSweepValue(0);
-                RollCircleImageView circle = (RollCircleImageView) findViewById(R.id.circle);
-                circle.setBorderWidth(10);
+                CircleProgressView circle = (CircleProgressView) findViewById(R.id.circle);
+                circle.setSweepValue(0);
+//                RollCircleImageView circle = (RollCircleImageView) findViewById(R.id.circle);
+//                circle.setBorderWidth(10);
                 break;
             case 4:
                 setContentView(R.layout.volume);
@@ -99,6 +99,9 @@ public class DetailActivity extends Activity {
                 break;
             case 9:
                 setContentView(R.layout.dispatch_mylinearlayout);
+                break;
+            case 16:
+                setContentView(R.layout.mymeasuretextview);
                 break;
         }
     }

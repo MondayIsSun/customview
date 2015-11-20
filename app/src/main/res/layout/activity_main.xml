@@ -19,6 +19,12 @@
         android:onClick="btnMeasure"
         android:text="Measure_2" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnMyMeasureTextView"
+        android:text="MyMeasureTextView" />
+
     <!--2.1、android 自定义控件 对现有控件进行拓展-->
     <Button
         android:layout_width="match_parent"

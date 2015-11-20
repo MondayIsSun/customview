@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <personal.elseed.android.customview.measureView.MyMeasureTextView
+        android:id="@+id/id_MyMeasureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:bound_bg_color="#F090"
+        custom:text_color="#FF00"
+        custom:text_content="text"
+        custom:text_size="20sp" />
+
+</RelativeLayout>

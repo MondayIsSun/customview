@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<personal.elseed.android.customview.customView.extendsView.CircleProgressView-->
-        <!--android:id="@+id/circle"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
-
-    <personal.elseed.android.customview.customView.extendsView.RollCircleImageView
+    <personal.elseed.android.customview.customView.extendsView.CircleProgressView
         android:id="@+id/circle"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_width="wrap_content"
-        android:src="@drawable/test1"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<personal.elseed.android.customview.customView.extendsView.RollCircleImageView-->
+    <!--android:id="@+id/circle"-->
+    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:src="@drawable/test1"-->
+    <!--android:layout_height="wrap_content" />-->
 
 </LinearLayout>

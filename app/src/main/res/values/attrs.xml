@@ -13,10 +13,17 @@
     </declare-styleable>
 
     <declare-styleable name="RollCircleImageView">
-        <attr name="civ_border_width" format="dimension"></attr>
-        <attr name="civ_border_color" format="color"></attr>
-        <attr name="civ_border_overlay" format="boolean"></attr>
-        <attr name="civ_fill_color" format="color"></attr>
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MyMeasureTextView">
+        <attr name="text_size" format="dimension" />
+        <attr name="text_content" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="bound_bg_color" format="color" />
     </declare-styleable>
 
 </resources>

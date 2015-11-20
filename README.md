@@ -24,6 +24,8 @@
 > * 这样一直递归，系统就完成了一组View的绘制
 > * View的大小的测量由 **onMeasure()** 实现，View绘制的位置由 **onLayout()** 实现，最后View的绘制由 **onDraw()** 实现
 
+
+
 ### 2、View的测量与绘制
 
 #### 三种测量模式(MeasureSpec的三种specMode)
@@ -37,6 +39,8 @@
 > Android提供了MeasureSpec类来帮助开发者测量View
 
 #### 测量onMeasure()
+
+子View自己测量自己的高宽，但是目的是为了让父View调用，告诉父View自己的大小
 
 > 注意：onMeasure()默认采用的测量模式是**EXACTLY**（注意：还是老老实实自己去计算测量View的尺寸吧）
 
@@ -75,6 +79,24 @@
 > 但是，ViewGroup会使用 **dispatchDraw()** 方法来绘制其包含的子View，其过程同样是通过遍历所有的子View，并调用子View的绘制方法来完成绘制
 
 ### 4、ViewGroup和LayoutParams之间的关系？
+
+ViewGroup.LayoutParams——>LayoutParams are used by views to tell their parents how they want to be laid out.——>laid out：安排，陈列
+
+ViewGroup子类可以实现自定义LayoutParams，自定义LayoutParams提供了更好地扩展性，例如LinearLayout就有LinearLayout. LayoutParams自定义类(见下文)。
+
+1、	直接添加子View时，常见于如下几种方法：ViewGroup.java
+	//Adds a child view.      
+	void addView(View child, int index)  
+	
+	//Adds a child view with this ViewGroup's default layout parameters   
+	//and the specified width and height.  
+	void addView(View child, int width, int height) 
+	
+	//Adds a child view with the specified layout parameters.         
+	void addView(View child, ViewGroup.LayoutParams params) 
+
+2、	通过xml布局文件指定某个View的属性为：android:layout_heigth=””以及android:layout_weight=”” 时。总的来说，这两种方式都会设定View的LayoutParams属性值----指定的或者Default值。
+
 大家可以回忆一下，当在LinearLayout中写childView的时候，可以写layout_gravity，layout_weight属性；在RelativeLayout中的childView有layout_centerInParent属性，却没有layout_gravity，layout_weight，这是为什么呢？这是因为每个ViewGroup需要指定一个LayoutParams，用于确定支持childView支持哪些属性，比如LinearLayout指定LinearLayout.LayoutParams等。如果大家去看LinearLayout的源码，会发现其内部定义了LinearLayout.LayoutParams，在此类中，你可以发现weight和gravity的身影。
 
 ## 三、自定义View的三种方式

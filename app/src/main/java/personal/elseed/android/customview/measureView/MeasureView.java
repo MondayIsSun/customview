@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 /**
  * Created by Administrator on 2015/10/15.
@@ -28,6 +30,10 @@ public class MeasureView extends View {
     }
 
     private int measureSize(int size, int measureSpec) {
+
+        LinearLayout.LayoutParams params;
+        ViewGroup.LayoutParams params1;
+
         int result = size;
 
         //获取测量模式和具体值

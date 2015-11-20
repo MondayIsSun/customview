@@ -29,6 +29,11 @@ public class OutlookActivity extends Activity {
         startActivity(mIntent);
     }
 
+    public void btnMyMeasureTextView(View view) {
+        mIntent.putExtra("flag", 16);
+        startActivity(mIntent);
+    }
+
     /**
      * 1、自定义控件——对现有控件进行拓展
      */
