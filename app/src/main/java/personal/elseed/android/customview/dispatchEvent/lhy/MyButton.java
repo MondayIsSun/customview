@@ -6,9 +6,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.Button;
 
-/**
- * Created by Administrator on 2015/11/2.
- */
 public class MyButton extends Button {
 
     private static final String TAG = MyButton.class.getSimpleName();
@@ -80,7 +77,6 @@ public class MyButton extends Button {
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
         int action = event.getAction();
-
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 Log.e("MyButton", "dispatchTouchEvent ACTION_DOWN");
@@ -99,5 +95,4 @@ public class MyButton extends Button {
         }
         return super.dispatchTouchEvent(event);
     }
-
 }

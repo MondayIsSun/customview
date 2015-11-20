@@ -6,9 +6,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
-/**
- * Created by Administrator on 2015/11/2.
- */
 public class MyLinearLayout extends LinearLayout {
 
     private static final String TAG = MyLinearLayout.class.getSimpleName();
@@ -16,6 +13,12 @@ public class MyLinearLayout extends LinearLayout {
     public MyLinearLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
+
+    /**
+     * 注意：吃掉事件和事件分发并不是是两码事！！！！！！！！！！！！！！
+     * 吃掉触摸事件，直接return true
+     * 吃掉点击事件，直接return true
+     */
 
     /**
      * 大体的事件流程为：
@@ -48,9 +51,7 @@ public class MyLinearLayout extends LinearLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
         int action = event.getAction();
-
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 Log.e("MyLinearLayout", "onTouchEvent ACTION_DOWN");
@@ -65,13 +66,11 @@ public class MyLinearLayout extends LinearLayout {
             default:
                 break;
         }
-
         return super.onTouchEvent(event);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-
         int action = ev.getAction();
         switch (action) {
             case MotionEvent.ACTION_DOWN:
@@ -87,7 +86,6 @@ public class MyLinearLayout extends LinearLayout {
             default:
                 break;
         }
-
         return super.onInterceptTouchEvent(ev);
     }
 

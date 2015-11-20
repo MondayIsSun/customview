@@ -1,4 +1,4 @@
-<personal.elseed.android.customview.measureView.CustomImgContainer
+<personal.elseed.android.customview.measureView.MyMeasureViewGroup
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -50,4 +50,4 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-</personal.elseed.android.customview.measureView.CustomImgContainer>
+</personal.elseed.android.customview.measureView.MyMeasureViewGroup>

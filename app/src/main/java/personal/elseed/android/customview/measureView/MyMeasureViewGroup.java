@@ -6,19 +6,19 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class CustomImgContainer extends ViewGroup {
+public class MyMeasureViewGroup extends ViewGroup {
 
 	private static final String TAG = "CustomImgContainer";
 
-	public CustomImgContainer(Context context, AttributeSet attrs, int defStyle) {
+	public MyMeasureViewGroup(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 	}
 
-	public CustomImgContainer(Context context) {
+	public MyMeasureViewGroup(Context context) {
 		super(context);
 	}
 
-	public CustomImgContainer(Context context, AttributeSet attrs) {
+	public MyMeasureViewGroup(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 
