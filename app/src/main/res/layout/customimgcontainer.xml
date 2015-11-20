@@ -5,8 +5,8 @@
     android:background="#AA333333" >
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:background="#E5ED05"
         android:gravity="center"
         android:text="0"
@@ -16,7 +16,7 @@
 
     <TextView
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="150dp"
         android:background="#00ff00"
         android:gravity="center"
         android:text="1"
@@ -25,7 +25,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="50dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="#ff0000"
         android:gravity="center"
@@ -34,6 +34,12 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
+    <!--
+        android:gravity="center"是设置view内部元素的对齐方式
+
+        android:layout_gravity and layout_gravity是LinearLayout特有的，
+        表示控制子view在父view中的对齐方式
+    -->
     <TextView
         android:layout_width="50dp"
         android:layout_height="50dp"
