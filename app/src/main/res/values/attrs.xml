@@ -11,4 +11,12 @@
         <attr name="rightTextColor" format="color" />
         <attr name="rightBackground" format="reference|color" />
     </declare-styleable>
+
+    <declare-styleable name="RollCircleImageView">
+        <attr name="civ_border_width" format="dimension"></attr>
+        <attr name="civ_border_color" format="color"></attr>
+        <attr name="civ_border_overlay" format="boolean"></attr>
+        <attr name="civ_fill_color" format="color"></attr>
+    </declare-styleable>
+
 </resources>

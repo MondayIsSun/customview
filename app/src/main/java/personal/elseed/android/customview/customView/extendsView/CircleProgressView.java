@@ -52,7 +52,11 @@ public class CircleProgressView extends View {
         // 绘制圆
         canvas.drawCircle(mCircleXY, mCircleXY, mRadius, mCirclePaint);
         // 绘制弧线
+
+        canvas.save();
+        //canvas.rotate(180f);
         canvas.drawArc(mArcRectF, 270, mSweepAngle, false, mArcPaint);
+        //canvas.restore();
         // 绘制文字
         canvas.drawText(mShowText, 0, mShowText.length(), mCircleXY, mCircleXY + (mShowTextSize / 4), mTextPaint);
     }
@@ -66,10 +70,10 @@ public class CircleProgressView extends View {
         }
 
         mCircleXY = length / 2;
-        mRadius = (float) (length * 0.5 / 2);
+        mRadius = (float) (length * 0.76 / 2);
         mCirclePaint = new Paint();
         mCirclePaint.setAntiAlias(true);
-        mCirclePaint.setColor(getResources().getColor(android.R.color.holo_blue_bright));
+        mCirclePaint.setColor(getResources().getColor(android.R.color.holo_green_light));
 
         mArcRectF = new RectF(
                 (float) (length * 0.1),
@@ -79,8 +83,8 @@ public class CircleProgressView extends View {
         mSweepAngle = (mSweepValue / 100f) * 360f;
         mArcPaint = new Paint();
         mArcPaint.setAntiAlias(true);
-        mArcPaint.setColor(getResources().getColor(android.R.color.holo_blue_bright));
-        mArcPaint.setStrokeWidth((float) (length * 0.1));
+        mArcPaint.setColor(getResources().getColor(android.R.color.holo_red_dark));
+        mArcPaint.setStrokeWidth((float) (length/4 * 0.1));
         mArcPaint.setStyle(Style.STROKE);
 
         mShowText = setShowText();
@@ -97,7 +101,7 @@ public class CircleProgressView extends View {
 
     private String setShowText() {
         this.invalidate();
-        return "Android Skill";
+        return "head icon";
     }
 
     public void forceInvalidate() {
@@ -108,7 +112,7 @@ public class CircleProgressView extends View {
         if (sweepValue != 0) {
             mSweepValue = sweepValue;
         } else {
-            mSweepValue = 25;
+            mSweepValue = 90;
         }
         this.invalidate();
     }
