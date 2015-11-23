@@ -61,6 +61,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="btnCircleImage"
+        android:text="CircleImage" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="btnVolumeView"
         android:text="VolumeView" />
 

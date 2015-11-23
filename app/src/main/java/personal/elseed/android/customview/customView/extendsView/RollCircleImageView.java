@@ -126,6 +126,12 @@ public class RollCircleImageView extends ImageView {
     }
 
     private Paint mArcPaint = new Paint();
+    private float mSweepAngle = 280.0f;
+
+    public void setSweepAngle(float sweepAngle) {
+        this.mSweepAngle = sweepAngle;
+        invalidate();
+    }
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -138,13 +144,38 @@ public class RollCircleImageView extends ImageView {
         }
         canvas.drawCircle(getWidth() / 2.0f, getHeight() / 2.0f, mDrawableRadius, mBitmapPaint);
         if (mBorderWidth != 0) {
-            canvas.drawCircle(getWidth() / 2.0f, getHeight() / 2.0f, mBorderRadius, mBorderPaint);
-//            RectF mArcRectF = new RectF(
-//                    (float) (getWidth() / 0.1),
-//                    (float) (getWidth() / 0.1),
-//                    (float) (getWidth() * 0.9),
-//                    (float) (getWidth() * 0.9));
-//            canvas.drawArc(mArcRectF, 270, 270, false, mArcPaint);
+
+            canvas.save();
+
+            //canvas.drawCircle(getWidth() / 2.0f, getHeight() / 2.0f, mBorderRadius, mBorderPaint);
+            //canvas.drawArc(getLeft(), getTop(), getRight(), getBottom(), 270, 270, false, mBorderPaint);
+
+//            canvas.rotate(180);
+//            canvas.restore();
+
+            RectF mArcRectF1 = new RectF(
+                    5.0f,
+                    (getHeight() / 2.0f) - (getWidth() / 2.0f) + 5.0F,
+                    getWidth() - 5.0F,
+                    (getHeight() / 2.0f) + (getWidth() / 2.0f) - 5.0F);
+            mArcPaint.setAntiAlias(true);
+            mArcPaint.setColor(getResources().getColor(android.R.color.white));
+            mArcPaint.setStrokeWidth(9.0f);
+            mArcPaint.setStyle(Paint.Style.STROKE);
+            canvas.drawArc(mArcRectF1, 270, 360, false, mArcPaint);
+
+            RectF mArcRectF = new RectF(
+                    2.0f,
+                    (getHeight() / 2.0f) - (getWidth() / 2.0f) + 2.0F,
+                    getWidth() - 2.0F,
+                    (getHeight() / 2.0f) + (getWidth() / 2.0f) - 2.0F);
+            mArcPaint.setAntiAlias(true);
+            mArcPaint.setColor(getResources().getColor(android.R.color.holo_green_light));
+            mArcPaint.setStrokeWidth(5.0f);
+            mArcPaint.setStyle(Paint.Style.STROKE);
+            canvas.drawArc(mArcRectF, 270, mSweepAngle, false, mArcPaint);
+
+            //canvas.drawCircle();
         }
     }
 

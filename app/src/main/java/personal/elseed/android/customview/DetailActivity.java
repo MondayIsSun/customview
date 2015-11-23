@@ -1,6 +1,7 @@
 package personal.elseed.android.customview;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -34,8 +35,6 @@ public class DetailActivity extends Activity {
                 setContentView(R.layout.circle_progress);
                 CircleProgressView circle = (CircleProgressView) findViewById(R.id.circle);
                 circle.setSweepValue(0);
-//                RollCircleImageView circle = (RollCircleImageView) findViewById(R.id.circle);
-//                circle.setBorderWidth(10);
                 break;
             case 4:
                 setContentView(R.layout.volume);
@@ -102,6 +101,13 @@ public class DetailActivity extends Activity {
                 break;
             case 16:
                 setContentView(R.layout.mymeasuretextview);
+                break;
+            case 17:
+                setContentView(R.layout.roll_circle_image);
+                RollCircleImageView circleImageView = (RollCircleImageView) findViewById(R.id.circle_image);
+                circleImageView.setSweepAngle((int)(Math.random()*360.0));
+                circleImageView.setBorderWidth(2);
+                circleImageView.setBorderColor(Color.BLACK);
                 break;
         }
     }

@@ -55,6 +55,11 @@ public class OutlookActivity extends Activity {
         startActivity(mIntent);
     }
 
+    public void btnCircleImage(View view) {
+        mIntent.putExtra("flag", 17);
+        startActivity(mIntent);
+    }
+
     public void btnVolumeView(View view) {
         mIntent.putExtra("flag", 4);
         startActivity(mIntent);
